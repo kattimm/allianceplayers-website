@@ -1,6 +1,4 @@
-  /***********************/
- /***** BASE STYLES *****/
-/***********************/
+/********************************************* BASE STYLES ***/
 
 html {
 	font-size: 16px;
@@ -11,19 +9,23 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#news {
-	min-height: 350px;
+.main-content {
+	background: #fafaeb;
+	padding: 40px 0 100px;
+	overflow: auto;
+	position: relative;
 }
 
-#shows {
-	min-height: 750px;
+.two-third-width {
+	float: none;
+	margin: 0 auto;
 }
 
 #get-involved {
 	min-height: 600px;
 }
 
-h1, h2, h3 {
+h1 {
 	font-family: 'Walter Turncoat', serif;
 }
 
@@ -96,9 +98,8 @@ hr.bottom-dashed {
 
 
 
-  /**********************/
- /******** GRID ********/
-/**********************/
+
+/********************************************* GRID ***/
 
 .full-container {
 	clear: both;
@@ -107,9 +108,11 @@ hr.bottom-dashed {
 }
 
 
-  /**********************/
- /******* HEADER *******/
-/**********************/
+
+
+/********************************************* HEADER ***/
+
+
 
 header {
 	background: url('../img/hero3.png') no-repeat;
@@ -193,58 +196,138 @@ header p {
 
 
 
-  /************************/
- /********* NEWS *********/
-/************************/
 
-#news-div {
+/********************************************* HOMEPAGE ***/
+
+#home-updates h2 {
+	margin-bottom: 60px;
+}
+
+#home-updates p a:hover {
+	color: #000;
+}	
+
+#home-updates p a {
+	display: block;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#home-updates .show {
+	margin-top: 0;
+	min-height: 1700px;
+}
+
+#home-updates h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
+}
+
+#home-updates img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+
+
+
+/********************************************* CURRENT SEASON ***/
+
+.show {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	margin: 90px 0;
+	min-height: 700px;
+	width: 100%;
+}
+
+.show:last-of-type {
+	border-bottom: 0;
+}
+
+.show-text h3 {
+	font-family: 'Walter Turncoat', serif;
+	font-size: 2.5em;
+}
+
+.show-poster img {
+	border: 8px solid #fff;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+	margin: 0 auto 60px;
+	width: 100%;
+}
+
+h3.dates,
+.dates {
+	border-top: 1px solid rgba(0,0,0,.2);
+	border-bottom: 1px solid rgba(0,0,0,.2); 
+/*	color: #397739; */
+	font-family: 'Walter Turncoat', serif;
+	font-size: 1.8em;
+	margin: 60px 0;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.google-cal {
+	display: block;
+	text-align: center;
+}
+
+
+
+
+/********************************************* ABOUT ***/
+
+#about a:hover {
+	color: #000;
+}
+
+#about h3 {
+	padding-top: 50px;
+}
+
+#about h4 {
+	margin: 5px 0;
+}
+
+#about h4:nth-of-type(1) {
+	margin-top: 50px;
+}
+
+#about h4:last-of-type {
+	margin-bottom: 50px;
+}
+
+
+
+
+/********************************************* PAST SHOWS ***/
+
+#past-shows {
 	background: #fafaeb;
-	font-size: 1em;
-	margin: 15px auto 0;
-	padding-bottom: 50px;
-	position: relative;}
-
-#news p {
-	margin: 10px 0 30px;
-}
-
-
-  /***********************/
- /******** SHOWS ********/
-/***********************/
-
-#shows {
-	background: url('../img/paper-background.jpg') repeat;
+	clear: both;
 	overflow: auto;
-	padding-bottom: 40px;
-	text-align: center;	
+	padding-bottom: 60px;
+	position: relative;
 }
 
-#shows h2 {
-	padding-bottom: 20px;
+#photos-text {
+	width: 100%;
 }
 
-#shows img {
-	box-shadow: 4px 4px 6px rgba(0,0,0,.4);
-	margin: 0 auto;
-	max-width: 90%;
-}
-
-#shows h3 {
-	margin-top: 40px;
+#photos-link {
+	width: 100%;
 }
 
 
 
 
-  /****************************/
- /******* GET INVOLVED *******/
-/****************************/
+/********************************************* GET INVOLVED ***/
 
 #get-involved {
 	background: #fafaeb;
 	overflow: auto;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 	position: relative;
 }
 
@@ -301,16 +384,27 @@ header p {
 
 
 
+/********************************************* CAST UPDATES ***/
+
+#cast-updates {
+	text-align: center;
+}
+
+#cast-updates h2 {
+	margin-bottom: 80px;
+}
 
 
-  /***********************/
- /******* CONTACT *******/
-/***********************/
+
+
+/********************************************* CONTACT ***/
 
 #contact {
 /*	background: url('../img/paper-background-green.jpg') repeat; */
 	background: rgba(25,100,32,.4);
+	clear: both;
 	overflow: auto;
+	padding-top: 20px;
 }
 
 #contact h2 {
@@ -353,71 +447,8 @@ header p {
 
 
 
-  /**************************/
- /******* PAST SHOWS *******/
-/**************************/
 
-#past-shows {
-	background: #fafaeb;
-	clear: both;
-	overflow: auto;
-	position: relative;
-}
-
-#photos-text {
-	width: 100%;
-}
-
-#photos-link {
-	width: 100%;
-}
-
-#past-shows img {
-	margin: 0 auto;
-	max-width: 100%;
-}
-
-#past-shows .two-third-width {
-	float: none;
-	margin: 0 auto;
-}
-
-
-.past-show {
-	padding: 20px;
-	margin-bottom: 40px;
-	overflow: auto;
-}
-
-.past-show img {
-	max-width: 100%;
-}
-
-
-
-  /*********************/
- /******** FAQ ********/
-/*********************/
-
-#faq {
-	background: #fafaeb;
-	padding: 40px 0 60px;
-	position: relative;
-}
-
-#faq h3 {
-	padding-top: 50px;
-}
-
-#faq .two-third-width {
-	float: none;
-	margin: 0 auto;
-}
-
-
-  /*******************************/
- /******** MEDIA QUERIES ********/
-/*******************************/
+/********************************************* MEDIA QUERIES ***/
 
 @media all and (min-width: 360px) {
 	header h1 {
@@ -458,6 +489,10 @@ header p {
 
 @media all and (min-width: 760px) {
 
+	#home-header {
+		min-height: 370px;
+	}
+
 	#header-title,
 	#header-nav {
 		float: left;
@@ -466,7 +501,7 @@ header p {
 
 	nav ul li {
 		display: inline-block;
-		margin: 15px 5px 0 5px;
+		margin: 15px 15px 0 15px;
 	}	
 }
 
@@ -474,6 +509,12 @@ header p {
 
 @media all and (min-width: 940px) {
 
+
+/********************************************* GLOBALS, HEADER ***/
+
+	.two-third-width {
+		width: 66%;
+	}
 
 	#header-title {
 		width: 40%;
@@ -494,23 +535,66 @@ header p {
 		padding: 2% 0;
 		width: 35%;
 	}
-
-	#news-div p {
-		margin: 10px auto 30px;
-		width: 70%;
+	
+	#home-updates .show {
+		min-height: 1000px;
 	}
 
-	#shows-poster,
-	#shows-text {
+
+
+/********************************************* SHOWS ***/
+
+	.show:nth-child(odd) .show-text,
+	.show:nth-child(odd) .show-poster {
+		float: right;
+	}
+
+	.show:nth-child(even) .show-text,
+	.show:nth-child(even) .show-poster {
 		float: left;
-		padding: 2.5%;
+	}
+
+	.show-poster,
+	.show-text {
+		float: left;
+	}
+
+	.show-text {
+		padding: 3%;
 		width: 45%;
+	}
+
+	.show-poster {
+		padding: 2%;
+		width: 45%;
+	}
+
+	.show-poster img {
+		display: block;
+		width: 75%;
+	}
+
+	.show:nth-child(odd) .show-poster img {
+		-ms-transform: rotate(2deg); /* IE 9 */
+		-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+		transform: rotate(2deg);
+	}
+
+	.show:nth-child(even) .show-poster img {
+		-ms-transform: rotate(-2deg); /* IE 9 */
+		-webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+		transform: rotate(-2deg);
 	}
 
 	#shows-text h3 {
 		margin-top: 0;
 		text-align: left;
 	}
+
+
+
+
+/********************************************* GET INVOLVED, CONTACT ***/
 
 	#involved-interests,
 	#involved-quote {
@@ -530,11 +614,6 @@ header p {
 		width: 45%;
 	}
 
-
-	#faq .two-third-width {
-		width: 66%;
-	}
-
 	#photos-text,
 	#photos-link {
 		float: left;
@@ -543,28 +622,4 @@ header p {
 		width: 45%;
 	}
 
-	#show-img-1,
-	#show-text-1,
-	#show-img-2,
-	#show-text-2,
-	#show-img-3,
-	#show-text-3 {
-		padding: 2.5%;
-		width: 45%;
-	}
-
-	#show-img-1,
-	#show-text-1 {
-		float: left;
-	}
-
-	#show-img-2,
-	#show-text-2 {
-		float: right;
-	}
-
-	#show-img-3,
-	#show-text-3 {
-		float: left;
-	}
 }
