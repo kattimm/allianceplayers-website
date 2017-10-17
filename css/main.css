@@ -21,6 +21,10 @@ body {
 	margin: 0 auto;
 }
 
+.center {
+	text-align: center;
+}
+
 #get-involved {
 	min-height: 600px;
 }
@@ -49,6 +53,10 @@ p {
 	color: #222222;
 	font-size: 1.125em;
 	text-align: left;
+}
+
+.big-text {
+	font-size: 1.5em;
 }
 
 a {
@@ -203,11 +211,11 @@ header p {
 	margin-bottom: 60px;
 }
 
-#home-updates p a:hover {
+.home-updates p a:hover {
 	color: #000;
 }	
 
-#home-updates p a {
+.home-updates .block {
 	display: block;
 	margin: 40px auto;
 	text-align: center;
@@ -228,6 +236,12 @@ header p {
 	width: 100%;
 }
 
+div.bpt_ticket_widget {
+	margin: 0 auto 80px !important;
+
+}
+
+
 
 
 
@@ -236,7 +250,10 @@ header p {
 .show {
 	border-bottom: 1px solid rgba(0,0,0,.05);
 	margin: 90px 0;
-	min-height: 700px;
+	min-height: 760px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding-bottom: 40px;
 	width: 100%;
 }
 
@@ -245,8 +262,8 @@ header p {
 }
 
 .show-text h3 {
-	font-family: 'Walter Turncoat', serif;
-	font-size: 2.5em;
+	font-family: 'Walter Turncoat', serif !important;
+	font-size: 2.5em !important;
 }
 
 .show-poster img {
@@ -254,6 +271,54 @@ header p {
 	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
 	margin: 0 auto 60px;
 	width: 100%;
+}
+
+.banner,
+.highlight {
+	background: rgba(11,15,54,.9);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+	color: #fff;
+	display: inline-block;
+	font-weight: normal;
+	margin-bottom: 40px;
+	padding: 0 30px;
+	position: relative;
+	text-align: center;
+}
+
+.banner a,
+.highlight a {
+	color: #fff;
+}
+
+.banner a:hover, 
+.highlight a:hover {
+	color: #efc06c !important;
+}
+
+.banner a {
+	margin: 25px 0 !important;
+}
+
+.highlight a {
+	display: inline-block !important;
+	margin: 0 !important;
+	padding: 0;
+}
+
+.highlight p {
+	color: #fff;
+	padding: 10px;
+}
+
+.highlight h4 {
+	font-size: 1.5em;
+}
+
+.banner {
+	font-size: 1.75em;
+	left: -30%;	
+	width: 150%;	
 }
 
 h3.dates,
@@ -268,10 +333,6 @@ h3.dates,
 	text-align: center;
 }
 
-.google-cal {
-	display: block;
-	text-align: center;
-}
 
 
 
@@ -537,7 +598,7 @@ h3.dates,
 	}
 	
 	#home-updates .show {
-		min-height: 1000px;
+		min-height: 900px;
 	}
 
 
@@ -566,7 +627,7 @@ h3.dates,
 
 	.show-poster {
 		padding: 2%;
-		width: 45%;
+		width: 43%;
 	}
 
 	.show-poster img {
@@ -589,6 +650,10 @@ h3.dates,
 	#shows-text h3 {
 		margin-top: 0;
 		text-align: left;
+	}
+
+	.banner {
+		left: -50%;
 	}
 
 
